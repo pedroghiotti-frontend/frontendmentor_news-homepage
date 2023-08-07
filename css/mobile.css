@@ -13,13 +13,17 @@ body
 #main__article
 {
     grid-template-areas: "i" "h" "m";
+    grid-template-rows: 2fr 1fr 1fr;
 }
 #main__article__more
 {
     display: grid;
     gap: 2rem;
 }
-#main__article img { grid-area: i; max-width: 100%; }
+#main__article__img
+{
+    background-image: url(../assets/images/image-web-3-mobile.jpg);
+}
 #main__article p { font-size: 1rem; }
 #main__article button 
 {
@@ -28,8 +32,8 @@ body
     height: 3rem;
 }
 
-#main__popular { gap: 2rem; }
-#main__popular p  { color: var(--ColNeutral_GrayishBlue); font-size: 1rem;}
+#main__new { gap: 2rem; }
+#main__new p  { color: var(--ColNeutral_GrayishBlue); font-size: 1rem;}
 
 #body__trending 
 {
